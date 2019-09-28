@@ -29,19 +29,21 @@
     </div>
     <div style="padding-top: 2em;" class="col">
      <h1>Place your order here</h1>
-<div class="form-group col-md-8">
+<div class="form-group col-md-12">
   <label for="sizeSelect">What would you like to order?</label>
 <!-- <input type="text" name=""> -->
-  <select class="form-control" id="input sizeSelect">
+<form class="form-inline col">
+  <select class="form-control col-md-6" id="input sizeSelect">
     <option value="sm">24 x 28</option>
     <option value="md">44 x 48</option>
     <option value="lg">48 x 48</option>
   </select>
 
-  
+  <button class="btn-lg btn-primary" type="button" onclick="loadDoc()">Place Order</button>
+</form>
 </div>
 
-  <button class="btn-lg btn-primary" type="button" onclick="loadDoc()">Place Order</button>
+  
     </div>
   </div>
 </div>
