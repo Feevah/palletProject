@@ -1,3 +1,13 @@
 jumbotron {
 	background-image: url("https://images.pexels.com/photos/1684989/pexels-photo-1684989.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") 
 }
+
+.card {
+	height: 30rem;
+	background-image:linear-gradient( 
+    rgba(53, 190, 212, 0.5), 
+	rgba(38, 81, 166, 0.5)),
+	url('https://images.pexels.com/photos/1684989/pexels-photo-1684989.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'); 
+	width: 95%;
+	background-size: cover;
+}
