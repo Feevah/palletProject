@@ -15,35 +15,38 @@
   <body>
 
 <!-- navbar -->
-
-<nav class="navbar navbar-expand-lg navbar-light"> 
- 
-  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><img src="ndr1.png" height="52" class="inline-block" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-   <div class="navbar-header float-left">
-  <a class="navbar-brand" href="#">
-    <img src="ndr1.png" height="60" class="d-inline-block align-top" alt="">
-  </a>
- </div>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="nav navbar-nav">
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Contact</a>
       </li>
-    </ul>
-    <ul class="nav navbar-nav ml-auto mr-5">
       <li class="nav-item">
-        <a class="nav-link" href="#">Sign Up</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
       </li>
+    </ul>
+    <ul class="navbar-nav  ml-auto mr-5">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Place an Order</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Schedule a Pickup</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#">Sign Up</a>
+      </li> -->
       <li class="nav-item">
         <a class="nav-link" href="#">Login</a>
       </li>
     </ul>
-
   </div>
 </nav>
 
@@ -60,10 +63,53 @@
 </container>
 
 
+
+<div class="container">
+  <div class="row">
+    <div class="text-center col-lg-4">
+      <img class="palletP" src="blockp.png">
+      <h3>Block Pallets</h3>
+        <select class="form-control col-md-6" id="input quantitySelect">
+          <option value="sm">20</option>
+          <option value="md">50</option>
+          <option value="lg">100</option>
+        </select>
+    </div>
+    <div class="text-center col-lg-4">
+      <img class="palletP" src="2waystringp.png">
+      <h3>2-way Stringer Pallets</h3>
+        <select class="form-control col-md-6" id="input quantitySelect">
+          <option value="sm">20</option>
+          <option value="md">50</option>
+          <option value="lg">100</option>
+        </select>
+    </div>
+    <div class="text-center col-lg-4">
+      <img class="palletP" src="4waystringerp.png">
+      <h3>4-way Stringer Pallets</h3>
+        <select class="form-control col-md-6" id="input quantitySelect">
+          <option value="sm">20</option>
+          <option value="md">50</option>
+          <option value="lg">100</option>
+        </select>
+    </div>
+  </div>
+</div>
+
+
+<!-- place order button -->
+
+<div class="container">
+  <div class="row place-order">
+     <button class="btn btn-outline-success my-2 mx-sm-2" type="button" onclick="loadDoc()">Place Order</button>
+  </div>
+</div>
+
+
 <!-- <div class="container"> -->
 <div class="row py-5">
   <div class="col" style="">
-    <img style="max-width: 100%; height:300px; padding-left: 2em;" src="48.jpg">
+    <img style="max-width: 100%; height:300px; padding-left: 2em;" src="blockp.png">
   </div>
   <div style="padding-top: 2em;" class="col">
     <h1>Place your order here</h1>
@@ -85,7 +131,8 @@
 </div>
 
 
-
+<!-- Schedule pickup -->
+<iframe src="https://calendar.google.com/calendar/embed?src=mbb0v28tgjio1h0bjjd4i80b1g%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0; display: inline-block; display: block; margin-left: auto; margin-right: auto; padding-bottom: 50px;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
