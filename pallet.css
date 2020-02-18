@@ -1,6 +1,11 @@
 jumbotron {
 	background-image: url("https://images.pexels.com/photos/1684989/pexels-photo-1684989.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") 
 }
+:root {
+	--success-color:#2ecc71;
+	--error-color:#e74c3c;
+}
+
 
 .card {
 	height: 30rem;
@@ -25,4 +30,29 @@ jumbotron {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.form-group input:focus {
+	outline:none;
+	border-color: #777;
+}
+
+.form-group.success input {
+	border-color: var(--success-color);
+}
+
+.form-group.error input {
+	border-color: var(--error-color);
+}
+
+.form-group small {
+	color:var(--error-color);
+	display: none;
+}
+.form-group.error small{
+	display: block;
+}
+
+.form-group small.text-muted {
+	display: inline;
 }
