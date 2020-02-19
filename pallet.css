@@ -1,0 +1,64 @@
+:root {
+	--success-color:#2ecc71;
+	--error-color:#e74c3c;
+};
+
+/* jumbotron {
+	background-image: url("https://images.pexels.com/photos/1684989/pexels-photo-1684989.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") 
+} */
+
+.card {
+	height: 30rem;
+	background-image:linear-gradient( 
+    rgba(53, 190, 212, 0.5), 
+	rgba(38, 81, 166, 0.5)),
+	url('https://images.pexels.com/photos/1684989/pexels-photo-1684989.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'); 
+	width: 95%;
+	background-size: cover;
+}
+
+.palletP {
+	max-width: 100%; 
+	height:300px; 
+	padding-left: 2em;
+}
+
+.place-order {
+	display: flex;
+	align-items: center;
+	padding-top: 2em;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.form-group input:focus {
+	outline:none;
+	border-color: #777;
+}
+
+.form-group.success input {
+	border-color: var(--success-color);
+	border-width: medium;
+}
+
+.form-group.error input {
+	border-color: var(--error-color);
+	border-width: medium;
+}
+
+.form-group small {
+	color:var(--error-color);
+	display: none;
+}
+.form-group.error small{
+	display: block;
+}
+
+.form-group small.text-muted {
+	display: inline;
+}
+
+.form-group.error small.text-muted {
+	display: none;
+}
