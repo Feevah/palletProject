@@ -4,8 +4,8 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('Retyped-password');
-
-
+const your_username = document.getElementById('your_username');
+const registered_password = document.getElementById('registered_password')
 // Functions
 
 
@@ -79,11 +79,22 @@ function checkLength(input, min, max){
 formReg.addEventListener('submit', function(e) {
     e.preventDefault();
     
-    checkRequired([companyName, username, email, password, password2])
+    checkRequired([companyName, username, email, password, password2]);
     checkLength(username, 3, 15);
     checkLength(companyName, 3, 15);
     checkLength(password, 6, 25);
     checkEmail(email);
-    checkPasswords(password, password2)
+    checkPasswords(password, password2);
 
 });
+
+
+signIn.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    checkRequired([your_username, registered_password]);
+    checkLength(registered_password, 6, 25);
+    checkLength(your_username, 3, 15);
+    checkPasswords(registered_password);
+
+})
